@@ -1,2 +1,3 @@
 # Competitive-Problem-Solving
-Solutions for some problems from different competitive websites
+This repo contains solutions for some problems from different competitive websites.
+I will update it continuously.
