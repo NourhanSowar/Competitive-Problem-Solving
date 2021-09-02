@@ -16,12 +16,12 @@ class Solution{
 
           int Mid_Value = ((Right_Side-Left_Side)/2)+Left_Side;
           if ( nums[Mid_Value] == target){
-            return Mid_Value; // return the position of target value
+            return Mid_Value; // return the position of target number
           }
-          else if ( nums[Mid_Value] < target){  // target is in the right side
+          else if ( nums[Mid_Value] < target){  // target number is in the right side
             Left_Side = Mid_Value+1;
           }
-          else if (nums[Mid_Value] > target){ // target is in the left side
+          else if (nums[Mid_Value] > target){ // target number is in the left side
             Right_Side = Mid_Value-1;
           }
         }
