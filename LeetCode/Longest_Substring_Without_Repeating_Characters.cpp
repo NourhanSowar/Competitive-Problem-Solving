@@ -9,7 +9,7 @@ using namespace std;
 class Solution {
     public:
         int maxs (int x, int y){
-            //return  (x>y) ? x :y;
+            return  (x>y) ? x :y;
         }
     public :
         int lengthOfLongestSubstring(string s) {
@@ -24,6 +24,7 @@ class Solution {
                  /* if 2 elemtns in hashset are repeated , then, remove the first repeated elemtent 
                  and change the start point by increment i */
                 if (hash.count(s[j])){
+                    
                     hash.erase(s[i]);
                     i=i+1;
                 }
@@ -32,7 +33,7 @@ class Solution {
                     hash.insert(s[j]);
                     j=j+1;
 
-                    returned_length = maxs(j-1,returned_length );
+                    returned_length = maxs(j-i,returned_length );
 
                 }
             }
