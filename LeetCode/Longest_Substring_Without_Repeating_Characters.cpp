@@ -9,7 +9,7 @@ using namespace std;
 class Solution {
     public:
         int maxs (int x, int y){
-            //return  (x>y) ? x :y;
+            return  (x>y) ? x :y;
         }
     public :
         int lengthOfLongestSubstring(string s) {
