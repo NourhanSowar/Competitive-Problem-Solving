@@ -6,9 +6,10 @@ public:
         int sum_max= nums[0];
         int sum_including_current = nums[0];
         
-        for (int n: nums){
+        for (int i =1; i<nums.size(),++i){
+            int n= nums[i];
             sum_including_current= max(sum_including_current+n,n);
-            cout <<"sum_including_current : "<<sum_including_current;
+            //cout <<"sum_including_current : "<<sum_including_current;
             
             sum_max= max(sum_max, sum_including_current);
         }
